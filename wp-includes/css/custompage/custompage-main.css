@@ -1,0 +1,331 @@
+.selected{ color: #fff; }
+.active{ background-color: #fff; }
+
+
+.layer {
+    background-color: rgb(214, 238, 237, 0.80);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+input, select {
+    outline: none !important;
+    border: none !important;
+}
+header h1 {
+    z-index: 1;
+    color: black;
+    font-size: 5em;
+    font-weight: 500;
+}
+
+header {
+    z-index: 1;
+}
+
+header h1 strong {
+    color: #3fc4b9;
+}
+
+/* nav, #mainNav {
+    background-color: transparent !important;
+} */
+
+#mainNav a {
+    color: #1f2436e3 !important;
+}
+
+#navbarResponsive ul li a {
+    text-transform: none !important;
+    font-weight: 600 !important;
+    font-size: 0.9rem;
+}
+
+.nav-inner {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 30px 90px rgba(31,36,48,.1);
+}
+
+.search-bar-big {
+    height: 6.875rem;
+}
+
+/* .form-control {
+    display: block;
+    width: 100%;
+    height: calc(1em + 2.4rem + 2px);
+    padding: 1.2rem 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #1f2430;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced0d5;
+    border-radius: 0;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+} */
+
+
+input, input:focus{
+    outline:0px !important;
+    -webkit-appearance:none !important;
+}
+
+.card-header {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: none;
+}
+
+.card-footer {
+    padding: 0.75rem 1.25rem;
+    background-color: rgba(0, 0, 0, 0);
+    border-top: none
+}
+
+
+#section-1-5 h2 {
+    color: white;
+    font-weight: lighter;
+}
+
+
+#section-1-5 ul a {
+    color: #5a8f91;
+}
+
+.p-75 {
+    padding: 75px;
+}
+
+#section-1-5 {
+    background: #0d3d3f;
+    color: #5a8f91;
+    z-index: 0;
+    transform: translateY(-6%);
+    padding-right: 150px;
+}
+
+@media (min-width: 768px) {
+    #section-1-5 {
+        position: absolute;
+        left: 0;
+        top: 95%;
+        min-height: 500px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #section-1-5 {
+        position: inherit;
+        left:0;
+        min-height: 100vh;
+        /* width: 100vw; */
+    }
+}
+
+@media (min-width: 1900px) {
+    #section-1-5 {
+        padding-right: 275px;
+        padding-left: 75px;
+    }
+}
+
+#section-2 {
+    background-color: rgb(252, 252, 252);
+}
+
+#section-2 h2 {
+    transform: translateX(20%);
+    color: black;
+}
+
+#section-2 h2 strong {
+    color: #3fc4b9;
+    text-transform: capitalize;
+}
+
+.card {
+    border: none !important;
+    border-radius: 0 !important;
+    height: 350px;
+    padding: 1rem;
+}
+
+.pseudo-hover {
+    position: relative;
+    width: max-content;
+    color: white;
+    text-decoration: none !important;
+}
+
+.pseudo-hover:hover:before {
+    content: "";
+    position: absolute;
+    left:0;
+    bottom: 1rem;
+    width: 110%;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.15);
+    z-index: -1;
+}
+
+#root {
+    position: relative;
+}
+
+.wrap-inner {
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.row-wrapper {
+    transform: translateX(20%)
+}
+
+@media all and (max-width: 1199px) {
+
+} 
+
+@media all and (max-width: 991px) {
+
+} 
+
+@media all and (max-width: 768px) {
+
+} 
+
+@media all and (max-width: 575px) {
+    .row-wrapper {
+        transform: translateX(0%)
+    }
+
+    #section-2 h2 {
+        transform: translateX(0%);
+        color: black;
+    }
+}
+
+/* SEARCH BAR */
+
+.component-hero-home__search-job-wrapper {
+    position: relative;
+    z-index: 3;
+    padding: 1.25rem 0;
+}
+.component-search-bar--big {
+    height: 6.875rem;
+}
+.component-search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 30px 90px rgba(31,36,48,.1);
+}
+.component-search-bar__item--keyword {
+    flex: 1 1 57%;
+    border-right: 2px solid #dadce1;
+}
+.component-search-bar__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+    line-height: 1;
+    height: 5rem;
+    padding-left: 3.875rem;
+}
+.component-search-bar__item__input {
+    border: none;
+    color: #1f2430;
+    line-height: 1;
+    width: 100%;
+    padding-right: 1.25rem;
+    background: transparent;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(2em + 2.4rem + 2px);
+    padding: 1.2rem 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #1f2430;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced0d5;
+    border-radius: 0;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+button, input {
+    overflow: visible;
+}
+
+.component-search-bar--big .component-search-bar__item__icon {
+    font-size: 1.5rem;
+}
+.component-search-bar__item__icon {
+    color: #818795;
+    position: absolute;
+    top: 50%;
+    left: 1.625rem;
+    font-size: 1.25rem;
+    transform: translateY(-50%);
+    transition: all .2s ease-in-out;
+    transition-delay: 0s;
+}
+.component-search-bar__item--location {
+    flex: 1 1 43%;
+}
+.component-search-bar__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+    line-height: 1;
+    height: 7rem;
+    padding-left: 3.875rem;
+}
+.component-search-bar__submit {
+    flex: 0 0 auto;
+    padding: /*0 1.25rem 0 0*/ 20px;
+}
+.component-search-bar--big .component-search-bar__submit__button {
+    width: 11.875rem;
+    height: 5rem;
+}
+.component-search-bar__submit__button {
+    width: 10rem;
+    height: 3.5rem;
+    padding: 0;
+}
+.btn {
+    height: 3.25rem;
+    display: inline-flex!important;
+    align-items: center!important;
+    justify-content: center!important;
+    background: #3fc4b9;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 0;
+    transition: all .2s ease-in-out;
+    transition-delay: 0s;
+}
